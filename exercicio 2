@@ -1,0 +1,27 @@
+// Questão 02: Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma, subtração, multiplicação e divisão desses números.
+package javiando;
+import java.util.Scanner;
+
+public class javajan {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+		System.out.println("digite o primeiro numero");
+		 int x = input.nextInt();
+		System.out.println("digite o segundo numero");
+		 int y = input.nextInt();
+		 
+		 int soma = x+y;
+		 int subtração = x-y;
+		 int multiplicação = x*y;
+		 int divisão = x/y;
+		
+	System.out.println(" A soma dos dois numeros é = " + soma);
+	System.out.println(" A subtração dos dois numeros é =" + subtração);
+	System.out.println(" A multiplicação dos dois numeros é =" + multiplicação);
+	System.out.println(" A divisão dos dois numeros é =" + divisão);
+	
+	input.close();
+
+	}
+}
