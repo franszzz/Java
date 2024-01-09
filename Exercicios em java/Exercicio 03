@@ -1,0 +1,22 @@
+// Questão 03: Escrever um algoritmo para determinar o consumo médio de um automóvel sendo fornecidos a distância total percorrida pelo automóvel e o total de combustível gasto.
+package javiando;
+import java.util.Scanner;
+
+public class javajan {
+
+	public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+		System.out.println("Qual foi a distancia percorrida?");
+		 int x = input.nextInt();
+		System.out.println("Qual o total de combustivel gasto?");
+		 int y = input.nextInt();
+		 
+		 int conmed = x+y;
+		
+		
+	System.out.println("O consumo medio é de " + conmed);
+	
+	input.close();
+
+	}
+}
