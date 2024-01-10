@@ -1,0 +1,30 @@
+// Questão 07: Escrever um algoritmo que leia de um aluno, o nome e as notas das três provas que ele obteve no semestre. 
+//No final informar o nome do aluno e a sua média (aritmética).
+
+package javiando;
+import java.util.Scanner;
+
+
+public class javajan {
+
+	public static void main(String[] args) {
+	
+	Scanner input = new Scanner(System.in);
+	 System.out.println("Qual o nome do aluno?");
+		 String nom = input.nextLine();
+	 System.out.println("Qual a nota da primeira prova?");
+		 int notaone = input.nextInt();
+	 System.out.println("Qual a nota da segunda prova?");
+		 int notatwo = input.nextInt();
+     System.out.println("Qual a nota da terceira prova?");
+     	 int notathree = input.nextInt();
+	
+	 int media = (notaone+notatwo+notathree)/3;
+		
+		
+	System.out.printf("O nome do aluno é " + nom + " e sua media no semestre é " + media);
+	
+	input.close();
+
+	}
+}
