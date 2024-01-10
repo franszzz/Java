@@ -1,0 +1,27 @@
+// Questão 05: Fazer um programa que leia o nome de um funcionário, seu número de horas trabalhadas, o valor que recebe por hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas decimais.
+package javiando;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class javajan {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner input = new Scanner(System.in);
+		System.out.println("Digite o nome do funcionario?");
+		 String funcionario = input.nextLine();
+		System.out.println("Digite as horas trabalhadas");
+		 double h = input.nextDouble();
+		System.out.println("Digite o valor por hora trabalhada");
+		 double ht = input.nextDouble();
+		
+		 double salario = h*ht;
+		
+		
+	System.out.printf("O nome do funcionario é  " + funcionario + " seu salário é = " + String.format("%.2f" , salario));
+	
+	input.close();
+
+	}
+}
