@@ -1,0 +1,28 @@
+// Questão 08: Ler dois valores para as variáveis A e B, e efetuar as trocas dos valores de forma que a variável A passe 
+//a possuir o valor da variável B e a variável B passe a possuir o valor da variável A. Apresentar os valores trocados.
+package javiando;
+import java.util.Scanner;
+
+
+public class javajan {
+
+	public static void main(String[] args) {
+	
+	Scanner input = new Scanner(System.in);
+	 System.out.println("Digite o primeiro numero");
+		 int x = input.nextInt();
+	 System.out.println("Digite o segundo numero");
+		 int y = input.nextInt();
+    
+	
+	 int troca = x;
+	 int troca2 = y;
+	 int troca3 = troca;
+		
+		
+	System.out.printf("O valor do primeiro numero trocado é " + troca2 + " o valor do segundo trocado é " + troca);
+	
+	input.close();
+
+	}
+}
